@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: Argo-Python-Flask Application
+  name: argo-python-flask application
   namespace: argocd
 spec:
   project: default
