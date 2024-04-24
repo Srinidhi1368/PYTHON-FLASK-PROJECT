@@ -64,6 +64,7 @@ sudo mv terraform /usr/local/bin
 #------------------Docker install-------------
 #sudo amazon-linux-extras install docker #linux 2022
 sudo yum install docker -y #linux 2023
+sudo systemctl start docker 
 sudo usermod -aG docker ec2-user
 sudo usermod -aG docker jenkins 
 newgrp docker
