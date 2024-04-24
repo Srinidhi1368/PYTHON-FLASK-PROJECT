@@ -73,7 +73,13 @@ sudo service docker start
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 #docker run -d --name tomcat -p 8089:8080 tomcat:lts-community
 
-
+#------------------python install------------------
+sudo yum install python -y
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+pip install flask
+pip show flask
+pip install pytest
 #-------------------argocd install---------------
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
