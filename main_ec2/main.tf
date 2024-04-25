@@ -2,7 +2,7 @@ resource "aws_instance" "web" {
   ami                    = "ami-001843b876406202a"      #change ami id for different region
   instance_type          = "t2.large"
   key_name               = "vscode"              #change key name as per your setup
-  vpc_security_group_ids = [aws_security_group.devops-project-srinidhi.id]
+  vpc_security_group_ids = [aws_security_group.devops-project-nidhi.id]
   user_data              = templatefile("./install.sh", {})
 
   tags = {
@@ -14,8 +14,8 @@ resource "aws_instance" "web" {
   }
 }
 
-resource "aws_security_group" "devops-project-srinidhi" {
-  name        = "devops-project-srinidhi"
+resource "aws_security_group" "devops-project-nidhi" {
+  name        = "devops-project-nidhi"
   description = "Allow TLS inbound traffic"
 
   ingress = [
@@ -40,6 +40,6 @@ resource "aws_security_group" "devops-project-srinidhi" {
   }
 
   tags = {
-    Name = "devops-project-srinidhi"
+    Name = "devops-project-nidhi"
   }
 }
