@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/Ankitadi5746/PYTHON-FLASK-PROJECT.git
+    repoURL: https://github.com/Srinidhi1368/PYTHON-FLASK-PROJECT.git
     targetRevision: HEAD
     path: argocd
   destination: 
